@@ -18,11 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
    ========================================================================== */
 function initThemeToggle() {
   const themeBtn = document.getElementById('theme-toggle-btn');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const savedTheme = localStorage.getItem('beta_theme') || (prefersDark ? 'dark' : 'light');
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  const savedTheme = localStorage.getItem('beta_theme') || (mediaQuery.matches ? 'dark' : 'light');
 
   document.documentElement.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
+
+  // Dynamically respond to OS dark/light mode changes when no manual override exists
+  mediaQuery.addEventListener('change', (e) => {
+    if (!localStorage.getItem('beta_theme')) {
+      const newTheme = e.matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      updateThemeIcon(newTheme);
+    }
+  });
 
   if (themeBtn) {
     themeBtn.addEventListener('click', () => {
@@ -285,6 +294,9 @@ function initLanguageToggle() {
 function applyLanguage(lang) {
   const dict = translations[lang];
 
+  // Update root document language for accessibility and SEO
+  document.documentElement.setAttribute('lang', lang);
+
   // Update text contents
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
@@ -300,6 +312,12 @@ function applyLanguage(lang) {
       el.setAttribute('placeholder', dict[key]);
     }
   });
+
+  // Update modal close button aria-label
+  const closeBtn = document.getElementById('modal-close-btn');
+  if (closeBtn) {
+    closeBtn.setAttribute('aria-label', lang === 'en' ? 'Close' : 'Schließen');
+  }
 }
 
 /* ==========================================================================
@@ -515,35 +533,48 @@ function initLegalModals() {
     `;
   }
 
+  let lastFocusedElement = null;
+
+  function openModal(title, content) {
+    lastFocusedElement = document.activeElement;
+    modalTitle.textContent = title;
+    modalContent.innerHTML = content;
+    modal.classList.add('active');
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    if (lastFocusedElement) {
+      lastFocusedElement.focus();
+    }
+  }
+
   impressumTrigger.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      modalTitle.textContent = currentLang === 'en' ? "Legal Notice" : "Impressum";
-      modalContent.innerHTML = getImpressumHTML();
-      modal.classList.add('active');
+      openModal(currentLang === 'en' ? "Legal Notice" : "Impressum", getImpressumHTML());
     });
   });
 
   privacyTrigger.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      modalTitle.textContent = currentLang === 'en' ? "Privacy Policy" : "Datenschutzerklärung";
-      modalContent.innerHTML = getPrivacyHTML();
-      modal.classList.add('active');
+      openModal(currentLang === 'en' ? "Privacy Policy" : "Datenschutzerklärung", getPrivacyHTML());
     });
   });
 
   if (closeBtn) {
-    closeBtn.addEventListener('click', () => modal.classList.remove('active'));
+    closeBtn.addEventListener('click', closeModal);
   }
 
   modal.addEventListener('click', (e) => {
-    if (e.target === modal) modal.classList.remove('active');
+    if (e.target === modal) closeModal();
   });
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('active')) {
-      modal.classList.remove('active');
+      closeModal();
     }
   });
 }
@@ -599,7 +630,7 @@ function initSmoothScroll() {
       if (targetEl) {
         e.preventDefault();
         const navHeight = 60;
-        const targetPos = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight;
+        const targetPos = targetEl.getBoundingClientRect().top + window.scrollY - navHeight;
         window.scrollTo({
           top: targetPos,
           behavior: 'smooth'

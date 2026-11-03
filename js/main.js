@@ -130,14 +130,14 @@ const translations = {
     // About / Network
     aboutLabel: "Das Netzwerk",
     aboutTitle: "Medienkompetenz trifft moderne Software-Architektur.",
-    aboutP1: "Unter der Leitung von Olivier Fourcade verbindet die BETA E-Com UG über drei Jahrzehnte Markt- und Verlagserfahrung der WP Europresse Verlag GmbH (Herausgeber renommierter Fachmagazine wie Eurotuner, BMW Power und Mercedes Tuner) sowie der XMedia-Group mit zeitgemäßer digitaler Commerce-Technologie.",
+    aboutP1: "Unter der Leitung von <strong>Olivier Fourcade</strong> verbindet die <strong>BETA E-Com UG</strong> über drei Jahrzehnte Markt- und Verlagserfahrung der <em>WP Europresse Verlag GmbH</em> (Herausgeber renommierter Fachmagazine wie Eurotuner, BMW Power und Mercedes Tuner) sowie der <em>XMedia-Group</em> mit zeitgemäßer digitaler Commerce-Technologie.",
     aboutP2: "Vom Braunsberger Feld in Bergisch Gladbach aus steuern wir die technische Realisierung, das Payment und die Plattform-Infrastruktur für interne Großprojekte und externe Partner.",
     aboutBoxTitle: "Unternehmensdaten auf einen Blick",
-    aboutItem1: "Sitz: Braunsberger Feld 13c, 51429 Bergisch Gladbach",
-    aboutItem2: "Register: Amtsgericht Köln, HRB 95142",
-    aboutItem3: "Geschäftsführung: Olivier Jean Victor Fourcade",
-    aboutItem4: "USt-IdNr.: DE319300736",
-    aboutItem5: "Gegründet: 19. Juli 2018",
+    aboutItem1: "<strong>Sitz:</strong> Braunsberger Feld 13c, 51429 Bergisch Gladbach",
+    aboutItem2: "<strong>Register:</strong> Amtsgericht Köln, HRB 95142",
+    aboutItem3: "<strong>Geschäftsführung:</strong> Olivier Jean Victor Fourcade",
+    aboutItem4: "<strong>USt-IdNr.:</strong> DE319300736",
+    aboutItem5: "<strong>Gegründet:</strong> 19. Juli 2018",
 
     // Contact Section
     contactHeaderTitle: "Starten wir Ihr nächstes digitales Projekt.",
@@ -239,14 +239,14 @@ const translations = {
     // About / Network
     aboutLabel: "The Network",
     aboutTitle: "Media Heritage Meets Modern Software Architecture.",
-    aboutP1: "Led by Managing Director Olivier Fourcade, BETA E-Com UG bridges more than three decades of publishing expertise from WP Europresse Verlag GmbH (publishers of acclaimed magazines such as Eurotuner, BMW Power, and Mercedes Tuner) and XMedia-Group with cutting-edge digital commerce engineering.",
+    aboutP1: "Led by <strong>Olivier Fourcade</strong>, <strong>BETA E-Com UG</strong> bridges more than three decades of publishing expertise from <em>WP Europresse Verlag GmbH</em> (publishers of acclaimed magazines such as Eurotuner, BMW Power, and Mercedes Tuner) and <em>XMedia-Group</em> with cutting-edge digital commerce engineering.",
     aboutP2: "From our headquarters in Bergisch Gladbach, Germany, we orchestrate the technical development, payment flows, and platform infrastructure for internal flagships and corporate partners.",
     aboutBoxTitle: "Corporate Profile at a Glance",
-    aboutItem1: "Registered Office: Braunsberger Feld 13c, 51429 Bergisch Gladbach, Germany",
-    aboutItem2: "Commercial Register: Local Court of Cologne, HRB 95142",
-    aboutItem3: "Managing Director: Olivier Jean Victor Fourcade",
-    aboutItem4: "VAT ID: DE319300736",
-    aboutItem5: "Incorporated: July 19, 2018",
+    aboutItem1: "<strong>Registered Office:</strong> Braunsberger Feld 13c, 51429 Bergisch Gladbach, Germany",
+    aboutItem2: "<strong>Commercial Register:</strong> Local Court of Cologne, HRB 95142",
+    aboutItem3: "<strong>Managing Director:</strong> Olivier Jean Victor Fourcade",
+    aboutItem4: "<strong>VAT ID:</strong> DE319300736",
+    aboutItem5: "<strong>Incorporated:</strong> July 19, 2018",
 
     // Contact Section
     contactHeaderTitle: "Let’s Build Your Next Digital Storefront.",
@@ -297,11 +297,11 @@ function applyLanguage(lang) {
   // Update root document language for accessibility and SEO
   document.documentElement.setAttribute('lang', lang);
 
-  // Update text contents
+  // Update text contents (supports HTML tags like strong/em)
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key]) {
-      el.textContent = dict[key];
+      el.innerHTML = dict[key];
     }
   });
 

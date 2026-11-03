@@ -44,9 +44,9 @@
     <section class="hero-section">
       <div class="hero-glow"></div>
       
-      <div class="hero-badge" data-i18n="heroBadge">
+      <div class="hero-badge">
         <span style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#30d158;"></span>
-        Digital Commerce & Automotive Merchandising
+        <span data-i18n="heroBadge">Digital Commerce & Automotive Merchandising</span>
       </div>
 
       <h1 class="hero-title">
@@ -58,8 +58,8 @@
       </p>
 
       <div class="hero-actions">
-        <a href="#services" class="btn-apple-primary" data-i18n="heroCtaPrimary">
-          Leistungen entdecken
+        <a href="#services" class="btn-apple-primary">
+          <span data-i18n="heroCtaPrimary">Leistungen entdecken</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="#showcase" class="btn-apple-secondary" data-i18n="heroCtaSecondary">
@@ -95,7 +95,7 @@
       <div class="section-header">
         <div class="section-label" data-i18n="bentoHeaderLabel">Kompetenzen</div>
         <h2 class="section-title text-gradient" data-i18n="bentoHeaderTitle">Maßgeschneidert. Skalierbar. Verlässlich.</h2>
-        <p class="section-desc">Ganzheitliche E-Commerce-Lösungen aus einer Hand — von der technischen Konzeption über Sonderanfertigungen bis zum laufenden operativen Betrieb.</p>
+        <p class="section-desc" data-i18n="bentoHeaderDesc">Ganzheitliche E-Commerce-Lösungen aus einer Hand — von der technischen Konzeption über Sonderanfertigungen bis zum laufenden operativen Betrieb.</p>
       </div>
 
       <div class="bento-grid">
@@ -108,7 +108,7 @@
             <h3 class="card-title" data-i18n="bentoCard1Title">Entwicklung & Custom Shops</h3>
             <p class="card-desc" data-i18n="bentoCard1Desc">Modernste Storefronts, headless Architekturen und integrierte Zahlungsflüsse, optimiert auf maximale Conversion und Geschwindigkeit.</p>
           </div>
-          <div class="card-tag">Shopware • Gambio • Custom Stacks</div>
+          <div class="card-tag" data-i18n="bentoTag1">Shopware • Gambio • Custom Stacks</div>
         </div>
 
         <!-- Card 2: Interactive Configurators (Span 4) with Live Interactive Demo -->
@@ -118,23 +118,23 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 14.83l4.24 4.24M14.83 9.17l4.24-4.24M4.93 19.07l4.24-4.24"/></svg>
             </div>
             <h3 class="card-title" data-i18n="bentoCard2Title">Produkt-Konfiguratoren</h3>
-            <p class="card-desc" data-i18n="bentoCard2Desc">Echtzeit-Konfiguratoren für Automobil- und Industrieprodukte.</p>
+            <p class="card-desc" data-i18n="bentoCard2Desc">Echtzeit-Konfiguratoren für Automobil- und Industrieprodukte mit direkter Kalkulation.</p>
             
             <!-- Live Interactive Mini-Configurator (Adaptive to Dark & Light Themes) -->
             <div class="configurator-box">
               <div class="configurator-controls">
-                <button class="config-btn active" data-finish="midnight-black" data-spec="Midnight Black Edition" data-price="€ 1.280,–">Black</button>
-                <button class="config-btn" data-finish="forged-carbon" data-spec="Forged Carbon Finish" data-price="€ 1.640,–">Carbon</button>
-                <button class="config-btn" data-finish="hyper-silver" data-spec="Hyper Silver Metallic" data-price="€ 1.150,–">Silver</button>
+                <button class="config-btn active" data-finish="midnight-black" data-spec="Midnight Black Edition" data-price="€ 1.280,–" data-i18n="configBtnBlack">Black</button>
+                <button class="config-btn" data-finish="forged-carbon" data-spec="Forged Carbon Finish" data-price="€ 1.640,–" data-i18n="configBtnCarbon">Carbon</button>
+                <button class="config-btn" data-finish="hyper-silver" data-spec="Hyper Silver Metallic" data-price="€ 1.150,–" data-i18n="configBtnSilver">Silver</button>
               </div>
               <div id="demo-config-preview" class="configurator-preview" data-finish="midnight-black">
-                <div class="config-preview-badge">Konfiguration Vorschau</div>
+                <div class="config-preview-badge" data-i18n="configPreviewBadge">Konfiguration Vorschau</div>
                 <div id="config-active-spec" class="config-preview-spec">Midnight Black Edition</div>
                 <div id="config-active-price" class="config-preview-price">€ 1.280,–</div>
               </div>
             </div>
           </div>
-          <div class="card-tag">Echtzeit-Berechnung</div>
+          <div class="card-tag" data-i18n="bentoTag2">Echtzeit-Berechnung</div>
         </div>
 
         <!-- Card 3: Shop-Vermietung & Turnkey (Span 6) -->
@@ -146,7 +146,7 @@
             <h3 class="card-title" data-i18n="bentoCard3Title">Shop-Vermietung & Turnkey-Betrieb</h3>
             <p class="card-desc" data-i18n="bentoCard3Desc">Fertige, sofort einsatzbereite Shop-Umgebungen zur Miete inklusive Wartung, Hosting und technischer Betreuung. Minimale Vorlaufzeiten, maximale Flexibilität.</p>
           </div>
-          <div class="card-tag">Mietmodelle • Full Managed</div>
+          <div class="card-tag" data-i18n="bentoTag3">Mietmodelle • Full Managed</div>
         </div>
 
         <!-- Card 4: Event-Ticketing & Merchandise (Span 6) -->
@@ -158,7 +158,7 @@
             <h3 class="card-title" data-i18n="bentoCard4Title">Event-Ticketing & Merchandise</h3>
             <p class="card-desc" data-i18n="bentoCard4Desc">Komplette Abwicklung von Event-Tickets (z. B. Drag Day), Print-Magazin-Abonnements und Fan-Merchandise inklusive Payment und Zutrittskontrolle.</p>
           </div>
-          <div class="card-tag">Ticketing • Merchandising</div>
+          <div class="card-tag" data-i18n="bentoTag4">Ticketing • Merchandising</div>
         </div>
       </div>
     </section>
@@ -168,19 +168,19 @@
       <div class="section-header">
         <div class="section-label" data-i18n="caseHeaderLabel">Referenzen</div>
         <h2 class="section-title text-gradient" data-i18n="caseHeaderTitle">Erprobte Plattformen in der Praxis.</h2>
-        <p class="section-desc">Klicken Sie auf die Referenzen, um die Live-Shops und Produktlösungen direkt zu besuchen.</p>
+        <p class="section-desc" data-i18n="caseHeaderDesc">Klicken Sie auf die Referenzen, um die Live-Shops und Produktlösungen direkt zu besuchen.</p>
       </div>
 
       <div class="portfolio-tabs">
-        <button class="tab-btn active" data-filter="all">Alle Projekte</button>
-        <button class="tab-btn" data-filter="automotive">Automotive & Tickets</button>
-        <button class="tab-btn" data-filter="retail">D2C & Food</button>
-        <button class="tab-btn" data-filter="tools">Konfiguratoren</button>
+        <button class="tab-btn active" data-filter="all" data-i18n="tabAll">Alle Projekte</button>
+        <button class="tab-btn" data-filter="automotive" data-i18n="tabAutomotive">Automotive & Tickets</button>
+        <button class="tab-btn" data-filter="retail" data-i18n="tabRetail">D2C & Food</button>
+        <button class="tab-btn" data-filter="tools" data-i18n="tabTools">Konfiguratoren</button>
       </div>
 
       <div class="showcase-grid">
         <!-- Project 1: Tuning-Couture (Clickable Link) -->
-        <a href="https://tuning-couture.de" target="_blank" rel="noopener noreferrer" class="showcase-card" data-category="automotive" title="Tuning-Couture Store & Ticketing aufrufen">
+        <a href="https://tuning-couture.de" target="_blank" rel="noopener noreferrer" class="showcase-card" data-category="automotive" title="Tuning-Couture Store & Ticketing">
           <div class="showcase-media media-tuning">
             <div class="showcase-media-logo">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
@@ -193,18 +193,18 @@
           </div>
           <div class="showcase-content">
             <div>
-              <span class="badge-pill accent">Automotive & Ticketing</span>
-              <h3 style="font-size: 19px; margin-bottom: 8px;">Tuning-Couture Store & Ticketing</h3>
-              <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 16px;">
+              <span class="badge-pill accent" data-i18n="badgeTuning">Automotive & Ticketing</span>
+              <h3 style="font-size: 19px; margin-bottom: 8px;" data-i18n="titleTuning">Tuning-Couture Store & Ticketing</h3>
+              <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 16px;" data-i18n="descTuning">
                 Offizieller Webshop für Print-Abonnements (Eurotuner, BMW Power), Streetwear, Merchandising und das Ticketing für Großevents wie den Drag Day am Flugplatz Meinerzhagen.
               </p>
             </div>
             <div>
-              <span class="showcase-link-btn" data-i18n="visitTuning">
-                Shop besuchen
+              <span class="showcase-link-btn">
+                <span data-i18n="visitTuning">Shop besuchen</span>
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </span>
-              <div style="font-size: 12px; color: var(--text-tertiary); border-top: 1px solid var(--border-subtle); padding-top: 12px; margin-top: 14px;">
+              <div style="font-size: 12px; color: var(--text-tertiary); border-top: 1px solid var(--border-subtle); padding-top: 12px; margin-top: 14px;" data-i18n="operatorTuning">
                 Betreiber: BETA E-Com UG
               </div>
             </div>
@@ -212,7 +212,7 @@
         </a>
 
         <!-- Project 2: BestofCandy (Clickable Link) -->
-        <a href="https://www.bestofcandy.de" target="_blank" rel="noopener noreferrer" class="showcase-card" data-category="retail" title="BestofCandy Online-Shop öffnen">
+        <a href="https://www.bestofcandy.de" target="_blank" rel="noopener noreferrer" class="showcase-card" data-category="retail" title="BestofCandy Online-Shop">
           <div class="showcase-media media-candy">
             <div class="showcase-media-logo">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="m7 6 10 10"/></svg>
@@ -225,18 +225,18 @@
           </div>
           <div class="showcase-content">
             <div>
-              <span class="badge-pill" style="color: var(--accent-orange); background: rgba(255, 159, 10, 0.15);">D2C & Retail Store</span>
-              <h3 style="font-size: 19px; margin-bottom: 8px;">BestofCandy E-Commerce & Outlet</h3>
-              <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 16px;">
+              <span class="badge-pill" style="color: var(--accent-orange); background: rgba(255, 159, 10, 0.15);" data-i18n="badgeCandy">D2C & Retail Store</span>
+              <h3 style="font-size: 19px; margin-bottom: 8px;" data-i18n="titleCandy">BestofCandy E-Commerce & Outlet</h3>
+              <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 16px;" data-i18n="descCandy">
                 E-Commerce-Handel und stationärer Store für über 200 originale US-Süßwaren, Softdrinks und Barbecue-Spezialitäten am Standort Bergisch Gladbach Herkenrath.
               </p>
             </div>
             <div>
-              <span class="showcase-link-btn" style="color: var(--accent-orange);" data-i18n="visitCandy">
-                Online-Shop öffnen
+              <span class="showcase-link-btn" style="color: var(--accent-orange);">
+                <span data-i18n="visitCandy">Online-Shop öffnen</span>
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </span>
-              <div style="font-size: 12px; color: var(--text-tertiary); border-top: 1px solid var(--border-subtle); padding-top: 12px; margin-top: 14px;">
+              <div style="font-size: 12px; color: var(--text-tertiary); border-top: 1px solid var(--border-subtle); padding-top: 12px; margin-top: 14px;" data-i18n="operatorCandy">
                 Betreiber: Bestofcandy BETA E-COM UG
               </div>
             </div>
@@ -244,7 +244,7 @@
         </a>
 
         <!-- Project 3: Gebhardt Automotive Configurator (Clickable Link) -->
-        <a href="https://www.gebhardt-automotive.de" target="_blank" rel="noopener noreferrer" class="showcase-card" data-category="tools" title="GEBHARDT Automotive Website aufrufen">
+        <a href="https://www.gebhardt-automotive.de" target="_blank" rel="noopener noreferrer" class="showcase-card" data-category="tools" title="GEBHARDT Automotive">
           <div class="showcase-media media-gebhardt">
             <div class="showcase-media-logo">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
@@ -257,18 +257,18 @@
           </div>
           <div class="showcase-content">
             <div>
-              <span class="badge-pill" style="color: var(--accent-green); background: rgba(48, 209, 88, 0.15);">Konfigurator Umsetzung</span>
-              <h3 style="font-size: 19px; margin-bottom: 8px;">GEBHARDT Automotive</h3>
-              <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 16px;">
+              <span class="badge-pill" style="color: var(--accent-green); background: rgba(48, 209, 88, 0.15);" data-i18n="badgeGebhardt">Konfigurator Umsetzung</span>
+              <h3 style="font-size: 19px; margin-bottom: 8px;" data-i18n="titleGebhardt">GEBHARDT Automotive</h3>
+              <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 16px;" data-i18n="descGebhardt">
                 Realisierung des interaktiven Online-Produktkonfigurators für Fahrzeugkomponenten mit direkter Spezifikationsauswahl und optimierter Usability.
               </p>
             </div>
             <div>
-              <span class="showcase-link-btn" style="color: var(--accent-green);" data-i18n="visitGebhardt">
-                Website aufrufen
+              <span class="showcase-link-btn" style="color: var(--accent-green);">
+                <span data-i18n="visitGebhardt">Website aufrufen</span>
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </span>
-              <div style="font-size: 12px; color: var(--text-tertiary); border-top: 1px solid var(--border-subtle); padding-top: 12px; margin-top: 14px;">
+              <div style="font-size: 12px; color: var(--text-tertiary); border-top: 1px solid var(--border-subtle); padding-top: 12px; margin-top: 14px;" data-i18n="operatorGebhardt">
                 Konfigurator Umsetzung: BETA E-COM UG
               </div>
             </div>
@@ -282,23 +282,23 @@
       <div class="bento-card col-span-12" style="padding: 48px;">
         <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center;">
           <div>
-            <div class="section-label" style="text-align: left; margin-bottom: 8px;">Das Netzwerk</div>
-            <h2 style="font-size: 28px; line-height: 1.2; margin-bottom: 16px;">Medienkompetenz trifft moderne Software-Architektur.</h2>
-            <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+            <div class="section-label" style="text-align: left; margin-bottom: 8px;" data-i18n="aboutLabel">Das Netzwerk</div>
+            <h2 style="font-size: 28px; line-height: 1.2; margin-bottom: 16px;" data-i18n="aboutTitle">Medienkompetenz trifft moderne Software-Architektur.</h2>
+            <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;" data-i18n="aboutP1">
               Unter der Leitung von <strong>Olivier Fourcade</strong> verbindet die <strong>BETA E-Com UG</strong> über drei Jahrzehnte Markt- und Verlagserfahrung der <em>WP Europresse Verlag GmbH</em> (Herausgeber renommierter Fachmagazine wie Eurotuner, BMW Power und Mercedes Tuner) sowie der <em>XMedia-Group</em> mit zeitgemäßer digitaler Commerce-Technologie.
             </p>
-            <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.6;">
+            <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.6;" data-i18n="aboutP2">
               Vom Braunsberger Feld in Bergisch Gladbach aus steuern wir die technische Realisierung, das Payment und die Plattform-Infrastruktur für interne Großprojekte und externe Partner.
             </p>
           </div>
           <div class="about-info-box">
-            <div style="font-size: 13px; font-weight: 600; color: var(--text-accent); margin-bottom: 12px; text-transform: uppercase;">Unternehmensdaten auf einen Blick</div>
+            <div style="font-size: 13px; font-weight: 600; color: var(--text-accent); margin-bottom: 12px; text-transform: uppercase;" data-i18n="aboutBoxTitle">Unternehmensdaten auf einen Blick</div>
             <ul style="list-style: none; font-size: 13px; color: var(--text-secondary); line-height: 2;">
-              <li><strong>Sitz:</strong> Braunsberger Feld 13c, 51429 Bergisch Gladbach</li>
-              <li><strong>Register:</strong> Amtsgericht Köln, HRB 95142</li>
-              <li><strong>Geschäftsführung:</strong> Olivier Jean Victor Fourcade</li>
-              <li><strong>USt-IdNr.:</strong> DE319300736</li>
-              <li><strong>Gegründet:</strong> 19. Juli 2018</li>
+              <li data-i18n="aboutItem1"><strong>Sitz:</strong> Braunsberger Feld 13c, 51429 Bergisch Gladbach</li>
+              <li data-i18n="aboutItem2"><strong>Register:</strong> Amtsgericht Köln, HRB 95142</li>
+              <li data-i18n="aboutItem3"><strong>Geschäftsführung:</strong> Olivier Jean Victor Fourcade</li>
+              <li data-i18n="aboutItem4"><strong>USt-IdNr.:</strong> DE319300736</li>
+              <li data-i18n="aboutItem5"><strong>Gegründet:</strong> 19. Juli 2018</li>
             </ul>
           </div>
         </div>
@@ -321,7 +321,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div>
-                <div style="font-size: 14px; font-weight: 600;">Standort</div>
+                <div style="font-size: 14px; font-weight: 600;" data-i18n="contactLocationLabel">Standort</div>
                 <div style="font-size: 13px; color: var(--text-secondary);">Braunsberger Feld 13c<br>51429 Bergisch Gladbach</div>
               </div>
             </div>
@@ -331,7 +331,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div>
-                <div style="font-size: 14px; font-weight: 600;">Telefon & Fax</div>
+                <div style="font-size: 14px; font-weight: 600;" data-i18n="contactPhoneLabel">Telefon & Fax</div>
                 <div style="font-size: 13px; color: var(--text-secondary);">Tel: +49 (0) 2207 7037960<br>Fax: +49 (0) 2207 7037965</div>
               </div>
             </div>
@@ -341,7 +341,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
               <div>
-                <div style="font-size: 14px; font-weight: 600;">E-Mail</div>
+                <div style="font-size: 14px; font-weight: 600;" data-i18n="contactEmailLabel">E-Mail</div>
                 <div style="font-size: 13px; color: var(--text-secondary);">info@tuning-couture.de<br>info@bestofcandy.de</div>
               </div>
             </div>
@@ -351,33 +351,33 @@
         <div>
           <form id="inquiry-form">
             <div class="form-group">
-              <label class="form-label" for="inquiry-type">Bereich der Anfrage</label>
+              <label class="form-label" for="inquiry-type" data-i18n="formSubjectLabel">Bereich der Anfrage</label>
               <select id="inquiry-type" class="form-select" required>
-                <option value="shop-dev">Online-Shop Entwicklung & Relaunch</option>
-                <option value="configurator">Interaktiver Produkt-Konfigurator</option>
-                <option value="shop-rent">Shop-Vermietung & Turnkey-Betrieb</option>
-                <option value="ticketing">Event-Ticketing & Merchandising</option>
-                <option value="other">Allgemeine Beratung / Partnerschaft</option>
+                <option value="shop-dev" data-i18n="formOpt1">Online-Shop Entwicklung & Relaunch</option>
+                <option value="configurator" data-i18n="formOpt2">Interaktiver Produkt-Konfigurator</option>
+                <option value="shop-rent" data-i18n="formOpt3">Shop-Vermietung & Turnkey-Betrieb</option>
+                <option value="ticketing" data-i18n="formOpt4">Event-Ticketing & Merchandising</option>
+                <option value="other" data-i18n="formOpt5">Allgemeine Beratung / Partnerschaft</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="contact-name">Ihr Name / Unternehmen</label>
-              <input type="text" id="contact-name" class="form-input" placeholder="z. B. Max Mustermann" required>
+              <label class="form-label" for="contact-name" data-i18n="formNameLabel">Ihr Name / Unternehmen</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="z. B. Max Mustermann / Unternehmen" data-i18n-ph="formNamePlaceholder" required>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="contact-email">E-Mail-Adresse</label>
-              <input type="email" id="contact-email" class="form-input" placeholder="name@beispiel.de" required>
+              <label class="form-label" for="contact-email" data-i18n="formEmailLabel">E-Mail-Adresse</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="name@beispiel.de" data-i18n-ph="formEmailPlaceholder" required>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="contact-message">Ihre Nachricht oder Projektbeschreibung</label>
-              <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Kurze Beschreibung Ihrer Anforderungen oder Ihres Vorhabens..." required></textarea>
+              <label class="form-label" for="contact-message" data-i18n="formMsgLabel">Ihre Nachricht oder Projektbeschreibung</label>
+              <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Kurze Beschreibung Ihrer Anforderungen oder Ihres Vorhabens..." data-i18n-ph="formMsgPlaceholder" required></textarea>
             </div>
 
             <button type="submit" class="btn-apple-primary" style="width: 100%; justify-content: center; padding: 14px;">
-              Anfrage absenden
+              <span data-i18n="formSubmitBtn">Anfrage absenden</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
             </button>
 
@@ -392,11 +392,11 @@
   <footer class="apple-footer">
     <div class="footer-container">
       <div class="footer-top">
-        <p>BETA E-Com UG (haftungsbeschränkt) • Braunsberger Feld 13c • 51429 Bergisch Gladbach • Amtsgericht Köln HRB 95142 • USt-IdNr.: DE319300736 • Geschäftsführer: Olivier Fourcade</p>
+        <p data-i18n="footerLegalLine">BETA E-Com UG (haftungsbeschränkt) • Braunsberger Feld 13c • 51429 Bergisch Gladbach • Amtsgericht Köln HRB 95142 • USt-IdNr.: DE319300736 • Geschäftsführer: Olivier Fourcade</p>
       </div>
 
       <div class="footer-bottom">
-        <div>
+        <div data-i18n="footerCopyright">
           Copyright &copy; 2026 BETA E-Com UG (haftungsbeschränkt). Alle Rechte vorbehalten.
         </div>
         <ul class="footer-links">

@@ -2,6 +2,8 @@
 
 This repository contains the official website for **BETA E-Com UG (haftungsbeschränkt)**, engineered using the **Apple Design System** principles (Human Interface Guidelines, SF Pro typography, frosted glassmorphism, bento grids, and refined micro-interactions).
 
+**🌐 Live Website:** [https://beta-ecom-ug.vercel.app](https://beta-ecom-ug.vercel.app)
+
 ---
 
 ## 🚀 Quick Start / How to View
